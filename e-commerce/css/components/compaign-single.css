@@ -1,0 +1,42 @@
+.single-compaign {
+  padding: 140px 15px;
+  background-image: url(../../img/single-campaign.png);
+  background-attachment: fixed; /* ! fenasal fenaaaasal */
+  margin-bottom: 40px;
+}
+
+.single-compaign .single-compaign-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.single-compaign-wrapper h2 {
+  font-size: 30px;
+}
+
+.single-compaign-wrapper strong {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.single-compaign-wrapper span {
+  height: 5px;
+  width: 50px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.single-compaign-wrapper a {
+  background-color: white;
+  border: black;
+  transition: 0.2s ease all;
+}
+
+.single-compaign-wrapper a:hover {
+  background-color: #1367ef;
+  color: white;
+}

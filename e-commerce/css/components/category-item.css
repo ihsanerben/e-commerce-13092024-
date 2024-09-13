@@ -1,0 +1,26 @@
+.category-list .category-item {
+  background-color: #f5f5f5; /* ! görsel hile yapıyoruz */
+  border-radius: 15px;
+  flex: 1; /* ! hepsini aynı boya sokuyor */
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-list .category-item a {
+  display: inline-block; /* ! */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category-list .category-item .category-image {
+  width: 100%; /* ! mantığını anlamadım */
+  transition: 0.2s ease all;
+}
+
+.category-list .category-item .category-image:hover {
+  transform: scale(1.1);
+}

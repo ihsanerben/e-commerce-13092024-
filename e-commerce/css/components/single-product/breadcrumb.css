@@ -1,0 +1,19 @@
+.single-product-wrapper .breadcrumb ul {
+  display: flex;
+}
+
+.single-product-wrapper .breadcrumb ul li {
+  font-size: 12px;
+  display: flex;
+}
+
+.single-product-wrapper .breadcrumb ul li a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.single-product-wrapper .breadcrumb ul li:not(:last-child):after {
+  content: "/";
+  color: #d3d6db;
+  margin: 0px 7px 0px 5px;
+}

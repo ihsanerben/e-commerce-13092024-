@@ -1,0 +1,75 @@
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.account-page .account-wrapper {
+  margin: 50px 0px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.account-wrapper .account-column {
+  flex-basis: 50%;
+}
+
+.account-wrapper .account-column h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.account-wrapper .account-column span {
+  font-size: 14px;
+}
+
+.account-wrapper .account-column form div label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.account-column:nth-child(1) .remember {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.account-column .form-link {
+  display: inline-block;
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.account-column .remember label {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.account-column .remember label span {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.account-column button {
+  margin: 20px 0px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.account-column .privacy-policy-text {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .account-wrapper {
+    margin: 20px 0px !important;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+  }
+}

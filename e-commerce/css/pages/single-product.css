@@ -1,0 +1,32 @@
+/* ! topbar start */
+.single-product-wrapper .single-topbar {
+  margin: 30px 0px;
+}
+/* ! topbar end */
+
+/* ! product main start */
+
+.single-product-wrapper .single-content {
+  margin: 30px 0px;
+}
+
+/* ! product main end */
+
+@media (max-width: 768px) {
+  .single-product-wrapper .site-main {
+    flex-direction: column;
+  }
+
+  .single-product-wrapper .site-main .product-gallery {
+    width: 100%;
+  }
+
+  .single-product-wrapper .site-main .product-info {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .variations-form .values .values-list span {
+    padding: 6px 20px;
+  }
+}

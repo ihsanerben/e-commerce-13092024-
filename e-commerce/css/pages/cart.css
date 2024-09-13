@@ -1,0 +1,213 @@
+.cart {
+  margin: 30px 0px;
+}
+
+.cart .cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ! cart form start */
+
+/* ! progress start */
+.cart .cart-wrapper .cart-form {
+  width: 60%;
+}
+
+.free-progress-bar {
+  border: 1px solid #d3d6db;
+  padding: 20px;
+}
+
+.cart-wrapper .progress-bar-title {
+  font-size: 14px;
+}
+
+.cart-wrapper .progress-bar-title strong {
+  color: red;
+}
+
+.cart-wrapper .progress-bar {
+  width: 100%;
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: #d3d6db;
+}
+
+.cart-wrapper .progress-bar .progress {
+  display: block;
+  width: 30%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: red;
+}
+/* ! progress end */
+
+/* ! table start */
+.cart-wrapper .shop-table img {
+  width: 60px;
+}
+
+/* ! ilginç bir kullanım */
+.cart-wrapper table > :not(caption) > * > * {
+  padding: 8px 0px;
+}
+
+/* ! collapse demezsek yemiyor */
+.cart-form {
+  overflow-x: auto;
+}
+
+.shop-table-wrapper {
+  min-width: 595px;
+}
+
+.cart-form table {
+  margin-top: 25px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart-form table tbody td {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cart-form table thead th {
+  font-size: 14px;
+  font-weight: 600;
+  /* ! en sola sabitliyor */
+  text-align: start;
+}
+
+.cart-form table tbody {
+  border-top: 1px solid #d3d6db;
+}
+
+.cart-form table tbody .cart-item {
+  border-bottom: 1px solid #d3d6db;
+}
+
+.cart-form table .product-quantity,
+.cart-form table .product-subtotal {
+  text-align: center;
+}
+
+.cart-form table .cart-item {
+  position: relative;
+}
+
+.cart-form table .cart-item i {
+  top: 4px;
+}
+/* ! table end */
+
+/* ! actions start */
+.shop-table-wrapper .actions-wrapper {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions-wrapper .coupon input {
+  height: 100%;
+  margin-right: 5px;
+}
+/* ! actions end */
+
+/* ! cart total start */
+.cart .cart-total-wrapper {
+  border: 1px solid #d3d6db;
+  width: 300px;
+  height: 100%;
+}
+
+.cart .cart-total-wrapper .cart-total {
+  padding: 30px;
+}
+
+.cart-total-wrapper .cart-total table {
+  width: 100%;
+}
+
+.cart-total-wrapper .cart-total table ul li label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.cart-total-wrapper .cart-total table ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.cart-total-wrapper .cart-total h2 {
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #d3d6db;
+  padding: 10px 0px;
+}
+
+.cart-total-wrapper .cart-total strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-total-wrapper table td {
+  text-align: end;
+}
+
+.cart-total-wrapper table th,
+.cart-total-wrapper table td {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cart-total-wrapper table tbody {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-total-wrapper table tbody tr {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-total-wrapper table tbody tr:not(:nth-child(3)) {
+  border-bottom: 1px solid #d3d6db;
+}
+
+.cart-total-wrapper .checkout-button button {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+/* ! cart total end */
+
+/* ! cart form end */
+
+@media (max-width: 992px) {
+  .cart-wrapper {
+    flex-direction: column;
+  }
+
+  .cart-wrapper .cart-form {
+    width: 100% !important;
+  }
+
+  .cart-wrapper .cart-total-wrapper {
+    margin-top: 10px;
+    width: 100% !important;
+  }
+
+  .cart-wrapper .actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

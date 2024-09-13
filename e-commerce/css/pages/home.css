@@ -1,0 +1,98 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* ! catagories start */
+.catagories {
+  margin: 40px 0px;
+}
+
+.category-list {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap; /* ! ilginç */
+}
+/* ! catagories end */
+
+/* ! products start */
+.products {
+  margin-bottom: 40px;
+}
+
+.products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .product-list .product-item {
+  margin-bottom: 20px;
+}
+/* ! products end */
+
+/* ! campaigns start */
+.campaigns-wrapper {
+  display: flex;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+/* ! campaigns end */
+
+/* ! blog start */
+
+.blog .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.blog {
+  margin-bottom: 40px;
+}
+/* ! blog end */
+
+/* ! brands start */
+.brands-wrapper {
+  margin: 100px 0px;
+  border: 1px solid #d7d7d7;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+
+.brands-wrapper .brand-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .brands-wrapper .brand-list {
+    gap: 20px;
+  }
+
+  .blog .blog-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 612px) {
+  .blog .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ! brands end */
+
+/* ! policy start */
+.policy {
+  border-top: 1px solid #d3d6db;
+}
+/* ! policy end */

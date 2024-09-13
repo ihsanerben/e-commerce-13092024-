@@ -1,0 +1,92 @@
+.contact-bottom-wrapper {
+  margin: 30px 0px;
+}
+
+.contact-bottom-wrapper .contact-titles h4 {
+  color: red;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-bottom-wrapper .contact-titles h2 {
+  font-size: 40px;
+}
+
+.contact-bottom-wrapper .contact-titles p {
+  font-size: 14px;
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+.contact-bottom-wrapper .contact-elements {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.contact-bottom-wrapper .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-bottom-wrapper .contact-form {
+  font-size: 14px;
+}
+
+.contact-bottom-wrapper .contact-form > div label span {
+  color: red;
+}
+
+.contact-bottom-wrapper .contact-form > div label {
+  margin-bottom: 5px;
+}
+
+.contact-bottom-wrapper .contact-form > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px);
+}
+
+.contact-bottom-wrapper .contact-form div:nth-child(3),
+.contact-bottom-wrapper .contact-form div:nth-child(4) {
+  /* ! flex basis */
+  flex-basis: 100%;
+}
+
+.contact-form .form-button {
+  background-color: black;
+  color: white;
+}
+
+.contact-elements .contact-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  row-gap: 20px;
+}
+
+.contact-info .contact-info-item {
+  font-size: 14px;
+}
+
+.contact-info .contact-info-item .contact-street {
+  margin: 20px 0px;
+}
+
+.contact-info .contact-info-item .contact-date {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-bottom-wrapper .contact-titles p {
+    width: 100%;
+  }
+
+  .contact-bottom-wrapper .contact-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}

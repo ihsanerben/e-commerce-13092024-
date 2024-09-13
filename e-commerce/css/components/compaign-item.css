@@ -1,0 +1,45 @@
+.campaigns-wrapper .compaign-item {
+  background-image: url(../../img/campaigns/banner1.png);
+  padding: 60px 50px; /* ! olay sadece bunda... */
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  color: white;
+  margin: 15px 0px;
+}
+
+.campaigns-wrapper .compaign-item .compaign-item-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.campaigns-wrapper .compaign-item .compaign-item-desc {
+  margin: 40px 0px;
+}
+
+.campaigns-wrapper:nth-child(1) .compaign-item:nth-child(1) {
+  flex: 2;
+}
+
+.campaigns-wrapper:nth-child(1) .compaign-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner2.png);
+  flex: 4;
+}
+
+.campaigns-wrapper:nth-child(2) .compaign-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner3.png);
+  flex: 3;
+}
+
+.campaigns-wrapper:nth-child(2) .compaign-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner4.png);
+  flex: 2;
+}
+
+/* ! flex wrap uygulanması için media querry tarafında flex 1 i kapatmamız lazım */
+@media (max-width: 768px) {
+  .campaigns-wrapper {
+    flex: unset;
+  }
+}

@@ -1,0 +1,130 @@
+:root {
+  --greyColor: #d3d6db;
+  --sistemColor: #1367ef;
+  --cokacikgri: #f9f9f9;
+}
+
+.slider-item {
+  position: relative;
+  height: calc(100vh - 136.5px); /* ! */
+  display: flex;
+  align-items: center;
+}
+
+.slider-item .slider-img img {
+  position: absolute; /* ! bu yapı önemli */
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover; /* ! */
+  object-position: 60%; /* ! */
+  z-index: -1;
+}
+
+.slider-item .slider-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.slider-item .slider-h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.slider-item a {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-elements {
+  position: relative;
+}
+
+.slider-elements .slider-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.slider-buttons button {
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  border-radius: 100%;
+  border: 1px solid var(--greyColor);
+  background-color: white;
+  opacity: 0.7;
+  transition: 0.2s ease all;
+}
+
+.slider-buttons button:hover {
+  color: white;
+  background-color: var(--sistemColor);
+  opacity: 1;
+  border: none;
+}
+
+.slider-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+  margin-bottom: 22px;
+}
+
+.slider-dots .slider-dot {
+  border-radius: 100%;
+  opacity: 0.4;
+  border: none;
+  display: flex;
+  transition: 0.2s ease all;
+}
+
+.slider-dots .slider-dot:hover {
+  opacity: 1;
+}
+
+.slider-dots .slider-dot span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: var(--sistemColor);
+}
+
+.slider-dots .slider-dot.active {
+  opacity: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-item {
+    height: calc(100vh - 154px); /* ! */
+  }
+
+  .slider-elements .slider-buttons {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.single-product-wrapper .single-tabs {
+  margin-bottom: 30px;
+}
+
+.single-product-wrapper .single-tabs .tab-list {
+  display: flex;
+  column-gap: 20px;
+  border-bottom: 1px solid #d3d6db;
+  padding-bottom: 20px;
+}
+
+.single-tabs .tab-panel h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+
+.single-product-wrapper .single-tabs .tab-list a.active {
+  font-weight: 600;
+}
+
+.single-tabs .tab-panel {
+  margin-top: 20px;
+}
+
+.single-tabs .top-panel-description {
+  font-size: 14px;
+}
+
+.single-tabs .tab-panel-information table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.single-tabs .tab-panel-information table td,
+.single-tabs .tab-panel-information table th {
+  font-size: 14px;
+  border: 1px solid #d3d6db;
+  padding: 10px 6px;
+  text-align: start;
+}
